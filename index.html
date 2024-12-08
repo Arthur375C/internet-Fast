@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Velocidade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+        }
+        .btn {
+            color: #ffffff;
+            background-color: #0056b3;
+            box-shadow: 3px 4px 0px 1px #0056b3;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #004494;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="imagens/eeca06c060704346adc2ff6980f8b3de-free (1).png">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+</head>
+<body>
+    <form id="testForm" action="process.php" method="POST">
+        <div class="g-recaptcha" data-sitekey="6LfB8zUqAAAAABWP3B0I4ZaeW-r-AoDAdoPNloj6"></div>
+        <button type="submit" class="btn">Iniciar Teste</button>
+    </form>    
+    <ul> 
+        <li><a href="index.html" class="menu">Home</a></li>
+        <li><a href="contato.html" class="menu">Contato</a></li>
+        <li><a href="policies privacy.html" class="menu">policies privacy</a></li>
+        <li><a href="termos de serviço.html" class="menu">termos de serviços</a></li>
+    </ul>
+    <div class="container">
+        <h1>Doação via Pix</h1>
+        <p>Para doar, utilize a chave Pix abaixo:</p>
+        <p id="pixKey">chave-pix@example.com</p>
+        <button id="startButton" class="btn">Iniciar Teste</button>
+        <button id="copyButton" class="btn">Copiar Chave Pix</button>
+        <div id="result"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Arthur Miguel. Todos os direitos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
